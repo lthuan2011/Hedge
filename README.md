@@ -14,3 +14,13 @@ Discord: https://discord.gg/fxmUNYTayQ
 ```
 sudo apt install curl -y && source <(curl -s https://nodesync.top/hedge_auto)
 ```
+
+## 2.1 Wallet
+Add New Wallet Key
+```
+hedged keys add wallet
+```
+Recover existing key
+```
+hedged keys add wallet --recover
+```
