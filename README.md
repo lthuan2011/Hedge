@@ -56,7 +56,7 @@ hedged tx staking create-validator \
 --details "XXXXXX" \
 --website "XXXXXX" \
 --security-contact "XXXXXX" \
---fees 650uhedge \
+--gas-prices="0.025uhedge" \
 --gas="auto" \
 --gas-adjustment="1.5" \
 --from "wallet"
