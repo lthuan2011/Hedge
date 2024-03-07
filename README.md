@@ -83,6 +83,41 @@ hedged tx staking delegate $(hedged keys show wallet --bech val -a) 1000000uhedg
 ```
 hedged tx distribution withdraw-rewards $(hedged keys show wallet --bech val -a) --from wallet --commission --chain-id berberis-1 --gas-prices=0.005uhedge  --gas-adjustment 1.5 --gas auto -y
 ```
+## 2.8 Unjail validator
+```
+hedged tx slashing unjail --from wallet --chain-id berberis-1 --gas-prices=0.005uhedge  --gas-adjustment 1.5 --gas auto -y
+```
+## 2.9 Services Management
+```
+# Reload Service
+sudo systemctl daemon-reload
+
+# Enable Service
+sudo systemctl enable hedged
+
+# Disable Service
+sudo systemctl disable hedged
+
+# Start Service
+sudo systemctl start hedged
+
+# Stop Service
+sudo systemctl stop hedged
+
+# Restart Service
+sudo systemctl restart hedged
+
+# Check Service Status
+sudo systemctl status hedged
+
+# Check Service Logs
+sudo journalctl -u hedged -f --no-hostname -o cat
+```
+
+# 3. Backup Validator
+```
+cat $HOME/.hedge/config/priv_validator_key.json
+```
 
 # 4. Delete node
 ```
