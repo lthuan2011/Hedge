@@ -76,7 +76,7 @@ hedged tx staking edit-validator \
 ```
 ## 2.6 Delegate Token to your own validator
 ```
-hedged tx staking delegate $(hedged keys show wallet --bech val -a) 125000000000uhedge --from wallet --chain-id berberis-1 --gas-prices=0.005uhedge  --gas-adjustment 1.5 --gas auto -y
+hedged tx staking delegate $(hedged keys show wallet --bech val -a) 1000000uhedge --from wallet --chain-id berberis-1 --gas-prices=0.005uhedge  --gas-adjustment 1.5 --gas auto -y
 ```
 
 ## 2.7 Withdraw rewards and commission from your validator
