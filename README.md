@@ -86,5 +86,5 @@ hedged tx distribution withdraw-rewards $(hedged keys show wallet --bech val -a)
 
 # 4. Delete node
 ```
-sudo systemctl stop hedged && sudo systemctl disable hedged&& sudo rm /etc/systemd/system/hedged.service && sudo systemctl daemon-reload && rm -rf $HOME/.hedge && rm -rf hedge
+sudo systemctl stop hedged && sudo systemctl disable hedged && sudo rm /etc/systemd/system/hedged.service && sudo systemctl daemon-reload && rm -rf $HOME/.hedge && rm -rf hedge
 ```
