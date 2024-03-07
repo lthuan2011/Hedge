@@ -6,6 +6,8 @@ Twitter: https://twitter.com/hedgeblockio
 
 Discord: https://discord.gg/fxmUNYTayQ
 
+Explorer: https://berberis.hedgescan.io/
+
 # 1. Minimum hardware requirement
 
 4 Cores, 8G Ram, 200G SSD, Ubuntu 22.04
