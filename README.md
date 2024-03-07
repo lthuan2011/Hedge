@@ -81,7 +81,7 @@ hedged tx staking delegate $(hedged keys show wallet --bech val -a) 125000000000
 
 ## 2.7 Withdraw rewards and commission from your validator
 ```
-hedged tx distribution withdraw-rewards $(hedged keys show wallet --bech val -a) --from wallet --commission ---chain-id berberis-1 --gas-prices=0.005uhedge  --gas-adjustment 1.5 --gas auto -y
+hedged tx distribution withdraw-rewards $(hedged keys show wallet --bech val -a) --from wallet --commission --chain-id berberis-1 --gas-prices=0.005uhedge  --gas-adjustment 1.5 --gas auto -y
 ```
 
 # 4. Delete node
