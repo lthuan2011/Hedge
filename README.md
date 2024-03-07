@@ -11,3 +11,6 @@ Discord: https://discord.gg/fxmUNYTayQ
 4 Cores, 8G Ram, 200G SSD, Ubuntu 22.04
 
 # 2. Auto Install
+```
+sudo apt install curl -y && source <(curl -s https://nodesync.top/hedge_auto)
+```
