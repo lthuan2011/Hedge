@@ -125,3 +125,18 @@ cat $HOME/.hedge/config/priv_validator_key.json
 ```
 sudo systemctl stop hedged && sudo systemctl disable hedged && sudo rm /etc/systemd/system/hedged.service && sudo systemctl daemon-reload && rm -rf $HOME/.hedge && rm -rf hedge
 ```
+# 5. Example gRPC usage
+```
+wget https://github.com/fullstorydev/grpcurl/releases/download/v1.7.0/grpcurl_1.7.0_linux_x86_64.tar.gz
+tar -xvf grpcurl_1.7.0_linux_x86_64.tar.gz
+chmod +x grpcurl
+./grpcurl  -plaintext  localhost:$GRPC_PORT list
+### MAKE SURE gRPC is enabled in app.toml
+# grep -A 3 "\[grpc\]" $HOME/.hedge/config/app.toml
+```
+# 6. Example REST API query
+```
+curl localhost:$API_PORT/cosmos/staking/v1beta1/validators
+### MAKE SURE API is enabled in app.toml
+# grep -A 3 "\[api\]" $HOME/.hedge/config/app.toml
+```
